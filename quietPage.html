@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS STYLE SHEETS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+   
+
+    <title>WanderingPage</title>
+  </head>
+  <body>
+     
+    
+  
+    <body>
+      
+      <div class="topnav">
+        <img class="logo" src="cover.png"> 
+        <a href="#contact">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#news">Learn More</a>
+      </div>
+  
+     <main>
+  
+  
+      <div id="sidebar">
+        
+        <textarea class="textbox"></textarea>
+        <a href="javascript:window.print();">
+          <button class="print" onclick="printTextbox()">Print</button>
+        </a>
+      </div>
+    </div>
+          <h2> Here are some ideas to help with wanderirng:</h2>
+            
+          <div class="card">
+           
+            <div class="container">
+              
+              <p>Ensure the person with dementia wear an ID bracelet or necklace. </p> 
+        
+              
+              <p>Lock doors or add a keyed deadbolt or combination lock on the doors. </p> 
+          
+            
+              <p>Hide doors with curtains, use safety covers on door knobs, cover windows in the door; install a chime that will ring when the door opens. </p> 
+        
+            
+              <p>Create a calming environment and stick to a routine. </p> 
+            </div>
+  
+          </main> 
+  
+          <div class="toggle-btn" onclick="show()">
+            <button
+               class="careplan-btn">Add to Care Plan</button>
+          <a href="calendar.html">
+            <button>Go To Calendar</button>
+          </a>
+        </div>
+  
+          
+          <a href="secondpage.html"> <button class="backbutton">Go Back</button>
+      </a>
+  
+      <script>
+        function show() {
+          document.getElementById("sidebar").classList.toggle("active");
+        }
+  
+  
+        function printTextbox() {
+              const printContents = document.getElementById('sidebar').innerText;
+              const originalContents = document.body.innerHTML;
+              document.body.innerText = printContents;
+              window.print();
+              document.body.innerText = originalContents;}
+  
+  
+      </script>
+      
+  
+  
+  </body>
+  </html>

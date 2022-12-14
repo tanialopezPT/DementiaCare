@@ -1,0 +1,404 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #F2F6EF;
+ 
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  
+  
+}
+
+
+.topnav a.logo {
+  float: left;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: black;
+}
+
+
+.firstbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+
+}
+
+h1, h2 {
+  
+  font-size: 35px;
+  margin-left: 90px;
+  margin-top: 75px;
+  margin-bottom: 15px;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  width: 85%;
+  line-height: 45px;
+  font-weight: lighter;
+}
+
+.secondtext {
+  text-align: center;
+  align-content: center;
+  margin-top: 75px;
+}
+
+img {
+  width: 120%;
+  top: 2em;
+}
+
+.image {
+  flex-basis: 100%;
+  padding-right: 55px;
+  padding-top: 45px;
+}
+
+.firstbutton {
+  color: purple;
+  padding: 15px 22px;
+  text-align: center;
+  margin-top: 390px;
+  margin-left: 90px;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+}
+
+.backbutton {
+  color: purple;
+  padding: 15px 22px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 200px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/*SECOND PAGE BUTTONS*/
+
+.button-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  column-gap: 20px;
+  row-gap: 20px;
+  color: purple;
+  cursor: pointer;
+  padding: 25px 12px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 125px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-weight: bold;
+  height: 67px;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+ 
+  
+}
+
+.buttons :hover {
+  background: rgb(220, 207, 231)
+}
+
+/*LOGO*/
+
+.logo {
+  width: 20%;
+  height: 40%;
+}
+
+/*WAVE IMAGE*/
+.wave-container {
+  background: white;
+}
+
+.wave-container>svg {
+  display: inline-block;
+  margin: 0;
+  position: fixed;
+
+}
+
+/* ALL BUTTONS*/
+
+button {
+  padding: 20px;
+  background-color: white;
+  border: 2px solid purple;
+  color: purple;
+  border-radius: 10%;
+
+}
+
+
+/* .transition-fade {
+  opacity: 1;
+  transition: 500ms;
+}
+html.is-animating .transition-fade {
+  opacity: 0;
+} */
+
+/* SOLUTION BOXES */
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: auto;
+  width: 70%;
+
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 75px 75px;
+  
+}
+
+
+/* CARE PLAN SLIDEOUT */
+#sidebar {
+  width: 50%;
+  float: right;
+  position: absolute;
+  z-index: 1;
+  height: 500px;
+  top: 15;
+  left: 15;
+  background-color: rgb(196, 163, 194);
+  border-radius: 10px;
+  overflow-x: hidden;
+  right: -675px;
+  transition: 0.5s;
+  padding-top: 15px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15)
+}
+
+#sidebar.active{
+  right: 0;
+}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  top: 60px;
+  right: 600px;
+
+}
+
+.toggle-btn .careplan-btn {
+  
+  /* flex: right;
+  display: block;
+  color: purple;
+  background-color: white;
+  font-size: 50px;
+  margin-top: -60px;
+  margin-bottom: 5px;
+  margin-right: 60px; */
+
+  padding: 20px;
+  background-color: white;
+  border: 2px solid purple;
+  color: purple;
+  margin-top: 15px;
+  margin-left: 200px;
+}
+
+.textbox {
+  position: absolute;
+  height: 400px;
+  width: 550px;
+  box-sizing: border-box; 
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+  resize: none;
+  margin-right: -400px;
+  margin-left: 75px;
+  font-family: sans-serif;
+  font-size: 16px;
+} 
+
+.print {
+  display: inline-block;
+  margin: auto;
+}
+
+
+
+
+
+/* CALENDAR */
+
+/* (A) ENTIRE PAGE */
+#cal-wrap * { font-family: arial, sans-serif; }
+.ninja { display: none !important; }
+
+/* (B) CONTAINER */
+#cal-wrap { max-width: 600px; }
+
+/* (C) PERIOD SELECTOR */
+#cal-date { display: flex; }
+#cal-mth, #cal-yr {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: 0;
+}
+
+/* (D) CALENDAR */
+#calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+#calendar tr.head td {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background: #f37070;
+  padding: 15px;
+  text-align: center;
+}
+#calendar tr.day td {
+  border: 1px solid #ddd;
+  width: 14.28%;
+  padding: 15px 5px;
+  vertical-align: top;
+}
+#calendar tr.day td:hover {
+  background: #fff9e4;
+  cursor: pointer;
+}
+#calendar tr td.blank {
+  background: #f5f5f5;
+}
+#calendar tr td.today {
+  background: #ffdede;
+}
+#calendar .dd {
+  font-size: 1.2em;
+  color: #999;
+}
+#calendar .evt {
+  margin-top: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+  overflow: hidden;
+  color: #ff5d5d;
+}
+
+/* (E) ADD/EDIT EVENT */
+#cal-event {
+  padding: 15px;
+  margin-top: 20px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+}
+#cal-event h1 {
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+#evt-date {
+  color: #555;
+  margin: 10px 0;
+}
+#cal-event textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  min-height: 100px;
+}
+#cal-event input[type=button], #cal-event input[type=submit] {
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.2em;
+  border: 0;
+  background: #ea4c4c;
+  color: #fff;
+}
+
+/* MEDIA QUERIES  */
+
+@media screen and (max-width:767px){
+
+  .button-container{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    width: 25%;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 500px;
+    
+  }
+
+  button {
+    font-size: smaller;
+
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  img{
+    display: flex;
+    max-width: fit-content;
+  }
+
+  .wave-container {
+    display: none;
+  }
+
+  .careplan-btn .backbutton {
+
+   align-content: center;
+
+  }
+
+}
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS STYLE SHEETS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="script.js"></script> -->
+
+    <title>Imagining Page</title>
+  </head>
+  <body>
+     
+    
+  
+    <body>
+      
+      <div class="topnav">
+        <img class="logo" src="cover.png"> 
+        <a href="#contact">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#news">Learn More</a>
+      </div>
+  
+     <main>
+  
+  
+      <div id="sidebar">
+        
+        <textarea class="textbox"></textarea>
+        <a href="javascript:window.print();">
+          <button class="print" onclick="printTextbox()">Print</button>
+        </a>
+      </div>
+    </div>
+          <h2> Here are some ideas to help with imagining things:</h2>
+            
+          <div class="card">
+           
+            <div class="container">
+              
+              <p>Try to understand what the person is looking at and what might be causing the misperception.</p> 
+            
+  
+          
+              
+              <p>Validate their emotions and offer reassurance. </p> 
+       
+            
+              <p>Minimize sounds of TV and radio. Increase lighting in active areas of the house.</p> 
+            </div>
+  
+            
+          
+            
+            <p>Paint or design rooms differently so they are able to distinguish a room by its color.</p> 
+            </div>
+  
+          </main> 
+  
+          <div class="toggle-btn" onclick="show()">
+            <button
+               class="careplan-btn">Add to Care Plan</button>
+          <a href="calendar.html">
+            <button>Go To Calendar</button>
+          </a>
+        </div>
+  
+          
+          <a href="secondpage.html"> <button class="backbutton">Go Back</button>
+      </a>
+  
+      <script>
+        function show() {
+          document.getElementById("sidebar").classList.toggle("active");
+        }
+  
+  
+        function printTextbox() {
+              const printContents = document.getElementById('sidebar').innerText;
+              const originalContents = document.body.innerHTML;
+              document.body.innerText = printContents;
+              window.print();
+              document.body.innerText = originalContents;}
+  
+  
+      </script>
+      
+  
+  
+  </body>
+  </html>

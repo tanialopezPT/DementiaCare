@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!-- CSS STYLE SHEETS -->
+<link rel="stylesheet" href="styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+
+    <title>Agitation</title>
+</head>
+<body>
+   
+  
+
+  <body>
+    
+    <div class="topnav">
+      <img class="logo" src="cover.png"> 
+      <a href="#contact">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#news">Learn More</a>
+    </div>
+
+   <main>
+
+
+    <div id="sidebar">
+      
+      <textarea class="textbox"></textarea>
+      <a href="javascript:window.print();">
+        <button class="print" onclick="printTextbox()">Print</button>
+      </a>
+    </div>
+  </div>
+        <h2> Here are some ideas to help with agitation:</h2>
+          
+        <div class="card">
+         
+          <div class="container">
+            <h4><b>✅ Remain calm</b></h4> 
+            <p>The last thing you want to do is upset your client even more. Take a deep breath and speak with a soft voice. </p> 
+
+            <p>Use short, simple sentences to communicate. </p> 
+
+            <p>Avoid asking questions and keep eye contact when you are talking. </p> 
+
+            <p>Create a calming environment and stick to a routine. </p> 
+          </div>
+
+
+        
+
+        </main> 
+
+        <div class="toggle-btn" onclick="show()">
+          <button
+             class="careplan-btn">Add to Care Plan</button>
+        <a href="calendar.html">
+          <button class="calendar-button">Go To Calendar</button>
+        </a>
+      </div>
+
+        
+        <a href="secondpage.html"> <button class="backbutton">Go Back</button>
+    </a>
+
+    <script>
+      function show() {
+        document.getElementById("sidebar").classList.toggle("active");
+      }
+
+
+      function printTextbox() {
+            const printContents = document.getElementById('sidebar').innerText;
+            const originalContents = document.body.innerHTML;
+            document.body.innerText = printContents;
+            window.print();
+            document.body.innerText = originalContents;}
+
+
+    </script>
+    
+
+
+</body>
+</html>
